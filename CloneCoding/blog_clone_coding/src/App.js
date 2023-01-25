@@ -16,20 +16,21 @@ function App() {
   let [title, setTitle] = useState(['학교 이미지와 실체', '부산소마고에 대하여', '아침운동이 X 같은 이유']);
   let [good, goodAdd] = useState(0);
 
-  function fn() {
+  function like() {
     goodAdd(good+1);
+    alert("좋아요를 눌렀습니다");
   }
 
   function titleChange() {
-      let copyTitle = [...title];
-      copyTitle[1] = 'ㅂㅅ소마고에 대하여';
-      setTitle(copyTitle);
+    let copyTitle = [...title];
+    copyTitle[1] = 'ㅂㅅ소마고에 대하여';
+    setTitle(copyTitle);
   }
 
   function sortTitle() {
-    let sortCopyData = [...title];
-    sortCopyData = sortCopyData.sort();
-    setTitle(sortCopyData);
+    let copyTitle = [...title];
+    copyTitle = copyTitle.sort();
+    setTitle(copyTitle);
   }
 
   return (
@@ -37,24 +38,23 @@ function App() {
       <div className="navBar">
         <h4>Blog</h4>
       </div>
-
-      <button onClick={ titleChange }>change</button>
-      <button onClick={ sortTitle }>정렬하기</button>
-
-      <br></br>
+      <div>
+        <button className="btn" onClick={ titleChange }>change</button>
+        <button className="btn" onClick={ sortTitle }>정렬하기</button>
+      </div>
 
       <div className="list">
-        <h4>{ title[0] } <span onClick={fn}>👍🏻</span> {good} </h4>
+        <h4>{ title[0] } <button className="likeBtn" onClick={ like }>👍🏻</button> {good} </h4>
         <p>1월 23일 발행</p>
       </div>
   
       <div className="list">
-        <h4>{ title[1] }</h4>
+        <h4>{ title[1] } <button className="likeBtn" onClick={ like }>👍🏻</button> {good}</h4>
         <p>1월 23일 발행</p>
       </div>
 
       <div className="list">
-        <h4>{ title[2] }</h4>
+        <h4>{ title[2] } <button className="likeBtn" onClick={ like }>👍🏻</button> {good}</h4>
         <p>1월 23일 발행</p>
       </div>
 
