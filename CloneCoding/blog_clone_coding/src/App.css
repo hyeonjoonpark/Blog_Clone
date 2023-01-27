@@ -26,19 +26,32 @@ div {
   float: left;
   margin-top: 20px;
   margin-left: 20px;
-  background: transparent;
+  background: white;
   border-radius: 10%;
 }
 
-.modal {
+.modalPage {
   margin-top: 20px;
   padding: 20px;
-  background-color: #eee;
+  background-color: lightgrey;
   text-align: left;
+  margin-top: 50px;
+  width: 100%;
 }
-
 .likeBtn {
-  background: transparent;
+  background: rgb(255, 0, 0);
   border: 2px solid black;
   border-radius: 50px;
+  margin-left: 20px;
+}
+
+.hateBtn {
+  background: rgb(255, 0, 0);
+  border: 2px solid black;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+
+textarea, input {
+  margin-left: 10px;
 }
