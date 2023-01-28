@@ -55,3 +55,11 @@ div {
 textarea, input {
   margin-left: 10px;
 }
+
+.list p a {
+  margin-right: 45px;
+}
+
+.commentInput {
+  margin-bottom: 10px;
+}
