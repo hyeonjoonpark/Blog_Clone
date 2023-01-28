@@ -4,7 +4,7 @@
 
 .navBar {
   display: flex;
-  background: rgb(1, 1, 87);
+  background: rgb(1, 1, 130);
   color: white;
   padding-left: 20px;
   width: 100%;
@@ -18,7 +18,7 @@ div {
   padding-left: 20px;
   text-align: left;
   border-bottom: 1px solid grey;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .btn {
@@ -33,7 +33,7 @@ div {
 .modalPage {
   margin-top: 20px;
   padding: 20px;
-  background-color: lightgrey;
+  background-color: rgb(174, 234, 255);
   text-align: left;
   margin-top: 50px;
   width: 100%;
@@ -63,4 +63,8 @@ textarea, input {
 .commentInput {
   margin-bottom: 10px;
   margin-right: 15px;
+}
+
+.comment {
+  background: rgb(236, 230, 230);
 }
