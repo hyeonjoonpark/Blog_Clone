@@ -17,6 +17,7 @@ function CommentModal(){
   return (
     <div className='comment'>
       댓글 <input className="commentInput" method='post'></input> 
+      <button type='submit' className='submitBtn'>댓글 업로드</button>
     </div>
   )
 }
@@ -61,7 +62,12 @@ function App() {
                 setHate(hateCnt);
               } }>👍🏻</button> {hate[i]}  
             </h4>
-            <p><a>{month}월 {day}일 발행</a><a onClick={ ()=>{setCommentModal(!commentModal)} }>댓글 작성하기</a></p>
+            <p>
+              <a>{month}월 {day}일 발행</a>
+              <a onClick={ ()=>{
+                setCommentModal(!commentModal)}
+              }>댓글 작성하기</a>
+            </p>
             {commentModal === true ? <CommentModal /> : null}
             { modal === true ? <Modal /> : null }
           </div>
